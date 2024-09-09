@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="pastel">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>User Profiles</title>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto py-12">
+        <nav class="flex items-center justify-between font-bold">
+            <!-- Logo -->
+            <img src="../images/student-logo.svg" alt="" class="hidden md:block w-20 h-20" />
+
+            <!-- Menu Items -->
+            <div class="hidden h-10 md:flex md:space-x-8">
+                <div class="group">
+                    <a href="../index.html">Home</a>
+                    <div class="mx-2 group-hover:border-b group-hover:border-blue-500"></div>
+                </div>
+                <div class="group">
+                    <a href="./userProfile.html">UserProfiles</a>
+                    <div class="mx-2 group-hover:border-b group-hover:border-blue-500"></div>
+                </div>
+                <div class="group">
+                    <a href="./collaborationTools.html">Collaboration Tools</a>
+                    <div class="mx-2 group-hover:border-b group-hover:border-blue-500"></div>
+                </div>
+                <div class="group">
+                    <a href="./funds.html">Funding&Grants</a>
+                    <div class="mx-2 group-hover:border-b group-hover:border-blue-500"></div>
+                </div>
+                <div class="group">
+                    <a href="./events.html">Calender Events</a>
+                    <div class="mx-2 group-hover:border-b group-hover:border-blue-500"></div>
+                </div>
+                <div class="group">
+                    <a href="./support.html">Help & Support</a>
+                    <div class="mx-2 group-hover:border-b group-hover:border-blue-500"></div>
+                </div>
+            </div>
+            <!-- Todo Hamburger Menu -->
+        </nav>
+        <h2 class="text-3xl font-bold text-center mb-12">User Profile</h2>
+
+        <!-- Profile Form -->
+        <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg mt-10">
+            <form>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-medium mb-2">Name</label>
+                    <input type="text" placeholder="Enter your name"
+                        class="w-full p-3 border border-gray-300 rounded-lg">
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-medium mb-2">Research Interests</label>
+                    <textarea placeholder="Enter your research interests"
+                        class="w-full p-3 border border-gray-300 rounded-lg"></textarea>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-medium mb-2">Contact Information</label>
+                    <input type="text" placeholder="Enter your contact information"
+                        class="w-full p-3 border border-gray-300 rounded-lg">
+                </div>
+
+                <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600">Save
+                    Profile</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
